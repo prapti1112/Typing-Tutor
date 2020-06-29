@@ -1,0 +1,49 @@
+.user{
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+
+.user .column{
+    display: flex;
+    flex: 1;
+    margin:  50px 0 50px 50px;
+    padding: 50px 0 50px 50px;
+}
+
+.info{
+    /* background-color: blueviolet; */
+    margin: 10px 10% 20px;
+    padding: 20px;   
+}
+
+.user .column .info .menu{
+    text-align: center;
+    margin: 5%;
+    font-size: 20px;
+}
+
+.info img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.details{
+    margin: 10px 15px 0px;
+    padding: 20px;
+    min-width: 500px;
+}
+
+.details input{
+    border-radius: 5px;
+    margin: 10px 0px;
+    min-width: 300px;
+    outline: none;
+    color: black;
+}
+
+.details input:focus{
+    background-color: rgb(238, 238, 238);
+}
+

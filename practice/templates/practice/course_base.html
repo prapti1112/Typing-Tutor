@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<link rel="stylesheet" href="{% static '/practice/css/course_base.css' %}">
+<div class="course_container">
+    <div class="lesson_ledger">
+        {% block ledger%}
+
+        {% endblock ledger %}
+    </div>
+    <div class="lesson_content">
+        {% block practice %}
+
+        {% endblock practice %}
+        {% include 'practice/course_keyboard.html' %}
+    </div>
+</div>
+{% endblock content%}

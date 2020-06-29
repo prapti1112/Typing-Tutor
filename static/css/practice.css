@@ -1,0 +1,43 @@
+.courses .card .card-body .btn{
+    border-radius: 20px;
+    
+}
+
+.courses .row{
+    justify-content: center;
+}
+
+.courses .row .card{
+    min-width: 300px;
+}
+
+.courses .row .card .card-body .btn{
+    width: 90px;
+    margin-top: 10px;
+    background-color: rgb(255, 123, 75);
+    border: none;
+    color: white;
+}
+
+.courses .row .card .card-body .btn:hover{
+    background-color: rgb(226, 60, 0);
+}
+
+.courses .row .column{
+    margin: 50px 20px;
+}
+
+.quick-test{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 158, 112, 0.562);
+    border-radius: 20px;
+    min-height: 250px;
+    width: 55%;
+    margin: 50px 20px;
+    padding: 20px;
+}
+
+
+
+

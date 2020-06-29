@@ -1,0 +1,107 @@
+.courses .card .card-body .btn{
+    border-radius: 20px;
+}
+
+.courses .row{
+    justify-content: center;
+}
+
+.courses .row .card{
+    min-width: 300px;
+}
+
+.courses .row .card .card-body .btn{
+    width: 90px;
+    margin-top: 10px;
+    background-color: rgb(255, 123, 75);
+    border: none;
+    color: white;
+}
+
+.courses .row .card .card-body .btn:hover{
+    background-color: rgb(226, 60, 0);
+}
+
+.courses .row .column{
+    margin: 50px 20px;
+}
+
+.menu-options{
+    margin:20px 30%;
+}
+
+select{
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    background: white;
+}
+
+option:hover{
+    color: hotpink;
+}
+
+.quick-practice{
+    display: flex;
+    flex-direction: row;
+}
+
+.result{
+    margin-left: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 245px;
+    min-width: 200px;
+    max-height: 300px;
+}
+
+.speed, .accuracy{
+    padding: 20px;
+    text-align: center;
+    min-height: 100px;
+}
+
+.title{
+    margin-bottom: 15px;
+    margin-top: 8px;
+    font-size: 25px;
+    font-family: fantasy;
+}
+
+.info{
+    font-size: 20px;
+}
+
+span{
+    margin: 0px;
+    padding: 0px;
+}
+
+#test_text{
+    background-color: rgb(255, 181, 154); 
+    border-radius: 20px;
+    margin-left: 20px;
+    max-height: 300px;
+    max-width: 751px;
+    padding: 20px;
+    color: gray;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
+
+#timmer{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 20px;
+    min-width: 200px;
+    max-height: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+

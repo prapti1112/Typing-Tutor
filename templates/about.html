@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static '/css/about.css' %}">
+
+<div class="intro">
+    <h1>About Us</h1>
+    <h3>This online typing platform is a brainchild of 5 undergraduates students of Vishwakarma Institute of Technology,
+        Pune <br>
+        The makers notices that fast typing was the need of the hour but none of the current students enrolled in
+        computer related courses were actually equiped with this essential tool. <br>
+        Fast typing drastically helps you increase your productivity and show a level of commitment to your work. <br>
+        The makers themselves are no masters in 10-finger typing but through this platform hope to create some </h3>
+</div>
+
+<h1 style="margin-left: 25px;">Meet the team</h1>
+<div class="team-info">
+    <div class="row">
+        <div class="card column" style="width: 12rem;">
+            <img src="{% static '/images/header3.jpg' %}" class="card-img-top" alt="Prapti" style="height: 12rem;">
+            <div class="card-body">
+                <p class="card-text">Prapti Patil <br> Developer </p>
+            </div>
+        </div>
+        <div class="card column" style="width: 12rem;">
+            <img src="{% static '/images/header3.jpg' %}" class="card-img-top" alt="Prapti" style="height: 12rem;">
+            <div class="card-body">
+                <p class="card-text">Akanksha Pokale <br> Developer </p>
+            </div>
+        </div>
+        <div class="card column" style="width: 12rem;">
+            <img src="{% static '/images/header3.jpg' %}" class="card-img-top" alt="Prapti" style="height: 12rem;">
+            <div class="card-body">
+                <p class="card-text">Mugdha Pendse <br> Developer </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card column" style="width: 12rem;">
+            <img src="{% static '/images/header3.jpg' %}" class="card-img-top" alt="Prapti" style="height: 12rem;">
+            <div class="card-body">
+                <p class="card-text">Vaishnavi Pharate <br> Developer </p>
+            </div>
+        </div>
+        <div class="card column" style="width: 12rem;">
+            <img src="{% static '/images/header3.jpg' %}" class="card-img-top" alt="Prapti" style="height: 12rem;">
+            <div class="card-body">
+                <p class="card-text">Komal Pawar <br> Developer </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

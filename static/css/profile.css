@@ -1,0 +1,15 @@
+.content{
+    height: 100%;
+    display: flex;
+}
+
+.selector{
+    display: flex;
+    flex: 1;
+}
+
+
+.info{
+    display: flex;
+    flex: 2;
+}

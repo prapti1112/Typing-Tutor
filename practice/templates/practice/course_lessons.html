@@ -1,0 +1,22 @@
+{% extends 'practice/course_base.html' %}
+{% load static %}
+
+{% block ledger%}
+<div class="f_j">F and J keys</div>
+<div class="d_k">D and K keys</div>
+<div class="s_l">D and K keys</div>
+<div class="a_;">A and ; keys</div>
+{% endblock ledger %}
+
+{% block practice %}
+<div class="practice_content">
+    <div id="letters-1"></div>
+    <div id="letters-2"></div>
+    <div id="letters-3"></div>
+    <div id="letters-4"></div>
+    <div id="letters-5"></div>
+    <div id="letters-6"></div>
+</div>
+
+<script src="{% static 'practice/js/course_lesson.js' %}"></script>
+{% endblock practice %}

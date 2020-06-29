@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'stats/css/Statistics.css' %}">
+<h1>All Time Statistics:</h1>
+<div class="grid-container">
+    <div class="grid-item">Total Time: <br> 5</div>
+    <div class="grid-item">Total Samples: <br> 1</div>
+    <div class="grid-item">Top Speed(wpm): <br> {{FirstOverall.speed}} </div>
+    <div class="grid-item">Accuracy: <br> {{FirstOverall.accuracy}}%</div>
+</div>
+<h1>Statistics For Today:</h1>
+<div class="grid-container">
+    <div class="grid-item">Total Time: <br> {{FirstOverall.duration}} </div>
+    <div class="grid-item">Total Samples: <br> 1</div>
+    <div class="grid-item">Top Speed(wpm): <br> {{FirstOverall.speed}} </div>
+    <div class="grid-item">Accuracy: <br> {{FirstOverall.accuracy}}%</div>
+</div>
+
+<h2>Compare yourself</h2>
+<h3>Your all time top speed beats 77.91% of all other people. <br> Your all time average speed beats 33.72% of
+    all other people. </h3>
+<br> <br>
+User: {{ user }} <br>
+{% for i in currentStats%}
+{{i.letter}} {{i.speed}} {{i.correct}} {{i.wrong}} <br>
+{% endfor %}
+
+<div class="chart" style="margin: 10% 5%;">
+    This chart shows all the correct letters typed <br>
+    <canvas id="Correct" height="200px" , width="1000px"></canvas> <br>
+    This chart shows all the wrong letters typed <br>
+    <canvas id="Wrong" height="200px" , width="1000px"></canvas> <br>
+    <br> <br>
+    This chart shows all the spedd of letters typed <br>
+    <canvas id="Speed" height="200px" , width="1000px"></canvas>
+</div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+    var ctx = document.getElementById('Correct').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: [{% for i in currentStats %} '{{i.letter}}',  {% endfor %}],
+    datasets: [{
+        label: 'Correct',
+        backgroundColor: 'rgb(47, 142, 150)',
+        borderColor: 'rgb(47, 142, 150)',
+        hoverBackgroundColor: 'rgb(0, 186, 201)',
+        data: [{% for i in currentStats %}'{{i.correct}}', {% endfor %}]
+    }]
+        },
+
+    // Configuration options go here
+    options: { }
+    });
+
+
+    var ctx = document.getElementById('Wrong').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: [{% for i in currentStats %} '{{i.letter}}',  {% endfor %}],
+    datasets: [{
+        label: 'Wrong',
+        backgroundColor: 'rgb(194, 47, 47)',
+        borderColor: 'rgb(194, 47, 47)',
+        hoverBackgroundColor: 'rgb(255, 0, 0)',
+        data: [{% for i in currentStats %} '{{i.wrong}}', {% endfor %}]
+    }]
+        },
+
+    // Configuration options go here
+    options: { }
+    });
+
+    var ctx = document.getElementById('Speed').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: [{% for i in currentStats %} '{{i.letter}}',  {% endfor %}],
+    datasets: [{
+        label: 'Wrong',
+        backgroundColor: 'rgb(119, 91, 166)',
+        borderColor: 'rgb(119, 91, 166)',
+        hoverBackgroundColor: 'rgb(180, 135, 255)',
+        data: [{% for i in currentStats %} '{{i.speed}}', {% endfor %}]
+    }]
+        },
+
+    // Configuration options go here
+    options: { }
+    });
+</script>
+{% endblock content %}

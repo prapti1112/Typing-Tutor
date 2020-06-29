@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static '/css/contact.css' %}">
+<div class="header" style="background-image: url('{% static '/images/header3.jpg' %}');">
+    <h1 class="main">Contact Us</h1>
+    <h3 class="sub-text">We are always open for you! Feel free to get in touch</h3>
+</div>
+
+<div class="contact">
+    <div class="column">
+        <div style="max-width: 50%; padding: 0 30px;">
+            <h4>Contact Us</h4> <br>
+            <h2>Get in Touch</h2> <br>
+            <hr class="divider">
+            <h6>BRACT’s Vishwakarma Institute of Technology, Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037
+            </h6>
+            <div class="interact" style="margin-top: 50px;">
+                <a href="#">interact@typingtutor.com</a>
+            </div>
+            <div style="margin-top: 45px;">
+                <h6 style="margin-bottom: 0;">Call Us at</h6> <br>
+                <h3 style="margin-top: 0;">+91 123456789</h3>
+            </div>
+        </div>
+
+        <div class="message" style="padding: 50px;">
+            <h2 style="font-size: 2rem;">Have any questions or suggestions, Feel free to Drop it here!</h2>
+            <hr class="divider" style="width:80px">
+            <h4 class="text">Your name: (required)</h4>
+            <textarea id="name" rows="1.5" style="width: 80%;"></textarea>
+            <h4 class="text">Your email: (required)</h4>
+            <textarea id="email" rows="1.5" style="width: 80%;"></textarea>
+            <h4 class="text">Your message: (required)</h4>
+            <textarea id="message" rows="5" style="width: 80%;"></textarea> <br>
+            <button class="btn" onclick="Send()">Send</button>
+        </div>
+
+    </div>
+
+    <script src="{% static '/js/contact.js' %}"></script>
+
+</div>
+{% endblock content %}

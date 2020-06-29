@@ -1,0 +1,27 @@
+.intro{
+    margin: 25px;
+}
+
+.team-info{
+    min-height: 500px;
+}
+
+.team-info .row{
+    justify-content: center;
+}
+
+.team-info .column{
+    margin: 50px 80px;
+}
+
+.team-info .card{
+    border: none;
+}
+
+.team-info .card img{
+    border-radius: 50%;
+}
+
+.team-info .card .card-text{
+    text-align: center;
+}

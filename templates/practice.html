@@ -1,0 +1,71 @@
+{% extends './practice/practice_base.html' %}
+{% load static %}
+
+{% block practiceInfotop %}
+<link rel="stylesheet" href="{% static 'practice/css/practice.css' %}">
+
+<div class="container courses">
+    <h3>Choose a method of practice</h3>
+    <div class="row">
+        <div class="card column" style="width: 12rem;">
+            <img src="{% static '/images/header3.jpg' %}" class="card-img-top" alt="Prapti" style="height: 12rem;">
+            <div class="card-body">
+                <p class="card-text">Start to end typing lessons </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100">
+                    </div>
+                </div>
+                <button class="btn">Start</button>
+            </div>
+        </div>
+
+        <div class="card column" style="width: 12rem;">
+            <img src="{% static '/images/header3.jpg' %}" class="card-img-top" alt="Prapti" style="height: 12rem;">
+            <div class="card-body">
+                <p class="card-text">Fast typing Overview </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100">
+                    </div>
+                </div>
+                <button class="btn">Start</button>
+            </div>
+        </div>
+
+        <div class="card column" style="width: 12rem;">
+            <img src="{% static '/images/header3.jpg' %}" class="card-img-top" alt="Prapti" style="height: 12rem;">
+            <div class="card-body">
+                <p class="card-text">Transcription lessons</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100">
+                    </div>
+                </div>
+                <button class="btn">Start</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container quick-test" style="display: flex;">
+    <div class="text">
+        <span id="1">T</span><span id="2">h</span><span id="3">i</span><span id="4">s</span><span id="5">_</span><span
+            id="6">i</span><span id="7">s</span><span id="8">_</span><span id="9">a</span><span id="10">_</span><span
+            id="11">t</span><span id="12">e</span><span id="13">s</span><span id="14">t</span><span
+            id="15">_</span><span id="16">t</span><span id="17">e</span><span id="18">x</span><span
+            id="19">t</span><span id="20">_</span><span id="21">t</span><span id="22">o</span><span
+            id="23">_</span><span id="24">b</span><span id="25">e</span><span id="26">_</span><span
+            id="27">d</span><span id="28">i</span><span id="29">s</span><span id="30">p</span><span
+            id="31">l</span><span id="32">a</span><span id="33">y</span><span id="34">e</span><span
+            id="35">d</span><span id="36">.</span>
+    </div>
+    <div class="timer"
+        style="margin-top:0; min-height:250px; border:2px solid black; position: absolute; left:1000px; color:black;">
+        00:00
+    </div>
+</div>
+
+<script src="{% static 'practice/js/practice.js' %}"></script>
+{% endblock practiceInfotop %}
+{% endblock content %}

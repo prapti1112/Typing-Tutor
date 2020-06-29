@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'account/css/profile.css' %}">
+<div class="user">
+    <div class="column">
+        <div class="info">
+            <img src="{% static '/images/header3.jpg' %}" alt="Profile pic">
+            <div class="menu account-details">Account</div>
+            <div class="menu change-password">Change Password</div>
+        </div>
+        <div class="details">
+            Account <br> <br>
+            Username: <br>
+            <input type="text" value="{{ user.username }}"> <br>
+            First Name: <br>
+            <input type="text" value="{{ user.firstname }}"> <br>
+            Last Name: <br>
+            <input type="text" value="{{ user.lastname }}"> <br>
+            Email: <br>
+            <input type="text" value="{{ user.email }}"> <br>
+            Password: <br>
+            <input type="text" value="{{ password }}"><br>
+            <button class="btn btn-success" onclick="SaveChanges()"> Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'account/js/profile.js' %}"></script>
+{% endblock content %}

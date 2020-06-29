@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static '/css/loginSignUp.css' %}">
+
+<div class="content">
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick='login()'>Log In</button>
+                <button type="button" class="toggle-btn" onclick='signUp()'>Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa fa-facebook icon"></i></a>
+                <a href="#"><i class="fa fa-twitter icon"></i></a>
+                <a href="#"><i class="fa fa-linkedin icon"></i></a>
+            </div>
+            <form id="login" action="" class="input-group">
+                <input type="text" class="input-field" placeholder="user id" required>
+                <input type="password" class="input-field" placeholder="password" required>
+                <input type="checkbox" class="check-box"> <span>Remember me</span>
+                <button type="submit" class="submit-btn" onclick="pros('Login In')">Log in</button>
+            </form>
+            <form id="signUp" action="" class="input-group">
+                <input type="text" class="input-field" placeholder="name" required name="Uname" id="name">
+                <input type="password" class="input-field" placeholder="password" required name="Upassword">
+                <input type="text" class="input-field" placeholder="email" required name="Uemail">
+                Gender: <input type="radio" class="radio-btn">Male
+                <input type="radio" class="radio-btn">Female
+                <input type="radio" class="radio-btn">Other
+                <input type="checkbox" class="check-box"> <span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn" onclick="pros('Sign Up')">Sign Up</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+<script src="{% static '/js/loginSignUp.js' %}"></script>
+{% endblock content %}

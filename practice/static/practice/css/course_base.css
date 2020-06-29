@@ -1,0 +1,52 @@
+ /* body{
+     overflow-y: hidden;
+ } */
+ 
+ .course_container{
+     display: flex;
+ }
+
+ .course_container div{
+    padding: 20px;
+ }
+
+.lesson_ledger{
+    flex: 2;
+    /* background-color: cornflowerblue; */
+}
+
+.lesson_content{
+    flex: 6;
+    /* background-color: cadetblue; */
+}
+
+.lesson_ledger div{
+    background-color: rgba(255, 193, 170, 0.89);
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.practice_content{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 150px;
+}
+
+.practice_content div{
+    flex: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: rgba(238, 238, 238, 0.87);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 40px;
+}

@@ -1,0 +1,114 @@
+html body{
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer{
+    background-color: #303036;
+    color: #d3d3d3;
+    height: 350px;
+    position: relative;
+    margin-top: auto;
+}
+
+.footer .footer-content{
+    height: 300px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+}
+
+.footer .footer-content .footer-section .icon{
+    border: 0.5px solid gray;
+    color: gray;
+    border-radius: 5px;
+    width: 38px;
+    height: 35px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .footer-section .icon:hover{
+    background-color: gray;
+    color: white;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .footer-section h2{
+    color: white;
+}
+
+.footer .footer-content  .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: gray;
+}
+
+.footer .footer-content .links ul a:hover{
+    color: white;
+    margin-left: 15px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.footer .footer-content .contact-form input, 
+.footer .footer-content .contact-form textarea{
+    padding-left: 100px;
+}
+
+.footer .footer-content .contact-form .btn{
+    background-color: wheat;
+}
+
+.footer .footer-content .contact-form .btn:hover{
+    background-color: coral;
+    color: whitesmoke;
+    transition: all 0.3s;
+}
+
+.footer .footer-content .contact-form .text-input{
+    border-radius: 5px;
+    background-color: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: 0.9rem 1.4rem;
+    border: none;
+}
+
+.footer .footer-content .contact-form .text-input:focus{
+    background: #1a1a1a;
+    outline: none;
+}
+
+.footer .footer-bottom{
+    background-color: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}

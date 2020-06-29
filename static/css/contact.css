@@ -1,0 +1,59 @@
+.header{
+    padding: 70px 50px;
+    background-size: 100% 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-family: 'Comic Sans MS';
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .column{
+    display: flex;
+    flex: 1;
+    margin:  50px 0 50px 50px;
+    padding: 50px 0 50px 50px;
+}
+
+.contact .divider{
+    width: 180px; 
+    border: 2px solid rgb(255, 69, 1);
+    margin-left: 0px;
+}
+
+.contact .message .text{
+    font-size: 15px;
+}
+
+.contact .message textarea{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 229, 219);
+}
+
+.contact .message textarea:focus{
+    background-color: rgb(252, 201, 182);
+    
+}
+
+.contact .message .btn{
+    background-color: rgba(255, 138, 96, 0.685);
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    padding: 7px 15px;
+    width: 95px;
+}
+
+.contact .message .btn:hover{
+    background-color: rgb(255, 99, 42);
+}
+
+
+
